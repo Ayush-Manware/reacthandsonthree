@@ -51,13 +51,14 @@ class Form extends Component {
   render() {
     return (
       <>
-        <h1 id="heading">Employee Feedback Form</h1>
+       <div className="container">
+       <h1 id="heading" className="heading">Employee Feedback Form</h1>
         {
           this.state.Var? 
           <form>
           <label id="font" htmlFor="name">
             Name:{" "}
-          </label>
+          </label> <br />
           <input
             type="text"
             name="name"
@@ -69,7 +70,7 @@ class Form extends Component {
           <br />
           <label id="font" htmlFor="Department">
             Department:{" "}
-          </label>
+          </label> <br />
           <input
             type="text"
             name="Department"
@@ -81,7 +82,7 @@ class Form extends Component {
           <br />
           <label id="font" htmlFor="Ratings">
             Rating
-          </label>
+          </label> <br />
           <input
             type="number"
             name="Rating"
@@ -91,11 +92,12 @@ class Form extends Component {
           ></input>
           <br />
           <br />
-          <button onClick={this.handleSubmit}>Submit</button>
+          <button onClick={this.handleSubmit} className="submitBtn" >Submit</button>
         </form>
         :
         <Data value={this.state.emptyArray} value2 = {this.dif}/> 
         }
+         </div>
       </>
     );
   }
