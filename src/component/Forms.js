@@ -58,7 +58,7 @@ class Form extends Component {
           <form>
           <label id="font" htmlFor="name">
             Name:{" "}
-          </label> <br />
+          </label> 
           <input
             type="text"
             name="name"
@@ -70,7 +70,7 @@ class Form extends Component {
           <br />
           <label id="font" htmlFor="Department">
             Department:{" "}
-          </label> <br />
+          </label> 
           <input
             type="text"
             name="Department"
@@ -81,8 +81,8 @@ class Form extends Component {
           <br />
           <br />
           <label id="font" htmlFor="Ratings">
-            Rating
-          </label> <br />
+            Rating : 
+          </label> 
           <input
             type="number"
             name="Rating"

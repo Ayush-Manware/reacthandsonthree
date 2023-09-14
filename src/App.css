@@ -1,8 +1,27 @@
 .container{
-  border: 2px solid gray;
-  width: 30vw;
   margin: 3vw auto;
   padding: 2vw;
+  width: 80%;
+  min-height: 20vw;
+  background-image: linear-gradient(rgba(51, 51, 254, 0.207),rgb(64, 64, 232));
+  text-align: center;
+}
+
+form{
+  width: 40vw;
+  margin: auto;
+}
+
+.h3Container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.print{
+  background-color: bisque;
+  padding: 5px;
+  border-radius: 5px;
+  margin-inline: 2px;
 }
 
 .heading{
@@ -11,14 +30,25 @@
 }
 
 input{
-  width: 100%;
-}
+  border-radius: 5px;  
+  border: 1px solid transparent; 
+  padding: 5px;
+} 
 
 .submitBtn{
   border-color: transparent;
   color: white;
   padding: 0.5vw 1vw;
-  width: 100%;
   margin: auto;
   background-color: rgb(239, 56, 86);
+}
+
+.backBtn{
+  background-color: rgba(255, 0, 0, 0.675);
+  border: 2px solid transparent;
+  color: white;
+  padding: 5px;
+  width: 20vw;
+  font-size: 1.4vw;
+  border-radius: 5px;
 }
